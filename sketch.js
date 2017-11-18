@@ -28,7 +28,7 @@ function setup() {
   speech.onLoad = ready;
 
   function ready() {
-    speech.setVoice(speech.voices[4].name);
+    speech.setVoice(speech.voices[5].name);
     say("Hello!");
   }
 
