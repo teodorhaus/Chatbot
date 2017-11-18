@@ -2,8 +2,6 @@ let speech;
 let speechRec;
 let bot;
 
-let attempts = 0;
-
 function setup() {
   let cnv = createCanvas(100, 100);
   cnv.position(400,20);
@@ -16,6 +14,7 @@ function setup() {
     bot.sortReplies();
     let num = floor(random(10)) + 1;
     bot.setVariable('num', num);
+    console.log('Chatbot ready!');
   }
 
   function brainError() {
