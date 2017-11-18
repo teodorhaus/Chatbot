@@ -28,9 +28,8 @@ function setup() {
   speech.onLoad = ready;
 
   function ready() {
-    speech.setVoice(speech.voices[3].name);
+    speech.setVoice(speech.voices[1].name);
     say("Hello!");
-    say("Hi!");
   }
 
   //starting Speech-Recognition
