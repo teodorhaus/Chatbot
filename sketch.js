@@ -2,6 +2,9 @@ let speech;
 let speechRec;
 let bot;
 
+
+ -let attempts = 0;
+
 function setup() {
   let cnv = createCanvas(100, 100);
   cnv.position(400,20);
