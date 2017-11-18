@@ -2,8 +2,7 @@ let speech;
 let speechRec;
 let bot;
 
-
- -let attempts = 0;
+let attempts = 0;
 
 function setup() {
   let cnv = createCanvas(100, 100);
