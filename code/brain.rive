@@ -17,9 +17,6 @@
 ! sub what'll = what will
 ! sub who's   = who is
 
-+ [what] [@be] [the] time [@be] [it]
-- The time is currently &localtime()
-
 + hi
 - Hello there
 
