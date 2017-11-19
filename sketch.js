@@ -2,8 +2,6 @@ let speech;
 let speechRec;
 let bot;
 
-let attempts = 0;
-
 function setup() {
   let cnv = createCanvas(100, 100);
   cnv.position(400,20);
@@ -14,8 +12,6 @@ function setup() {
 
   function brainReady() {
     bot.sortReplies();
-    let num = floor(random(10)) + 1;
-    bot.setVariable('num', num);
     console.log('Chatbot ready!');
   }
 
@@ -28,7 +24,7 @@ function setup() {
   speech.onLoad = ready;
 
   function ready() {
-    speech.setVoice(speech.voices[6].name);
+    speech.setVoice(speech.voices[3].name);
     say("Hello!");
   }
 
@@ -41,16 +37,6 @@ function setup() {
   }
 }
 
-//draw the attempts
-function draw() {
-  background(51);
-  textAlign(CENTER, CENTER);
-  fill(255);
-  stroke(0);
-  strokeWeight(12);
-  textSize(80);
-  text(attempts, width / 2, height / 2);
-}
 
 function say(s) {
   speech.speak(s);
