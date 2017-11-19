@@ -5,6 +5,7 @@ let bot;
 function setup() {
   let cnv = createCanvas(100, 100);
   cnv.position(400,20);
+  console.log(speech.voices);
 
   //start Bot
   bot = new RiveScript();
