@@ -5,7 +5,7 @@ let bot;
 function setup() {
   let cnv = createCanvas(100, 100);
   cnv.position(400,20);
-  console.log(speech.voices);
+  
 
   //start Bot
   bot = new RiveScript();
@@ -21,8 +21,13 @@ function setup() {
   }
 
   //starting Speaking
-  speech = new p5.Speech();
+  speech = new p5.Speech(voiceReady);
   speech.onLoad = ready;
+  
+    function voiceReady() {
+  console.log(speech.voices);
+  }
+  
 
   function ready() {
     speech.setVoice(speech.voices[3].name);
