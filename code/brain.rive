@@ -1,3 +1,4 @@
+//Chatbot's brain
 ! version = 2.0
 
 ! sub i'm     = i am
@@ -17,15 +18,22 @@
 ! sub what'll = what will
 ! sub who's   = who is
 
-+ hi
-- Hello there
++ (hi|hello|hey)
+- Hello!
 
 + how are you
 - I'm great, how are you?
 - I'm good, you?
-- Good :) you?
 - Great! You?
 - I'm fine, thanks for asking!
+
++ good
+% (I'm great, how are you?|I'm good, you?|Great! You?)
+- That's great!
+
++ (not so good|bad|not good|i'm sad)
+% (I'm great, how are you?|I'm good, you?|Great! You?)
+- Why not?
 
 + *
 - Try saying something else!
@@ -56,5 +64,3 @@
   - Apologize!
 
 < topic
-
-
