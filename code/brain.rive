@@ -28,11 +28,11 @@
 - I'm fine, thanks for asking!
 
 + good
-% (I'm great, how are you?|I'm good, you?|Great! You?)
+% (im great how are you|im good you|great you)
 - That's great!
 
-+ (not so good|bad|not good|i'm sad)
-% (I'm great, how are you?|I'm good, you?|Great! You?)
++ (not so good|bad|not good|im sad)
+% (im great how are you|im good you|great you)
 - Why not?
 
 + *
